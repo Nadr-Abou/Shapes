@@ -17,7 +17,7 @@ public class Cpoint {
     }
 
     public void setX(double x) {
-        this.x = x < 0 ? 0 : x;
+        this.x = x;
     }
 
     public double getY() {
@@ -25,6 +25,6 @@ public class Cpoint {
     }
 
     public void setY(double y) {
-        this.y = y < 0 ? 0 : y;
+        this.y = y;
     }
 }

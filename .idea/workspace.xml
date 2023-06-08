@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="661c3bfc-b0b3-4059-bfd8-af3e99c16b82" name="Changes" comment="Inizio progetto e creazione classi 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Cpoint.java" afterDir="false" />
+    <list default="true" id="661c3bfc-b0b3-4059-bfd8-af3e99c16b82" name="Changes" comment="Esercizio terminato, mancano ancora dei test in particolare gestire il rettangolo quando la base o l'altezza è 0 anche l'altro deve essere messo a 0">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/RectangleTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ShapeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Cpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Cpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Hexagon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Hexagon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Shape.java" afterDir="false" />
@@ -33,26 +34,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2QbJwwL6fpS4CRg6o8lhNaF7R1H" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
@@ -61,8 +64,21 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShapeTest.testCalcoloArea">
-    <configuration name="ShapeTest.testCalcoloArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RectangleTest.testIntersezioneThisMinor">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="Shapes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RectangleTest.testIntersezione" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Shapes" />
       <extension name="coverage">
         <pattern>
@@ -71,14 +87,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ShapeTest" />
-      <option name="METHOD_NAME" value="testCalcoloArea" />
+      <option name="MAIN_CLASS_NAME" value="org.example.RectangleTest" />
+      <option name="METHOD_NAME" value="testIntersezione" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeTest.testCalcoloPerimetro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RectangleTest.testIntersezioneEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Shapes" />
       <extension name="coverage">
         <pattern>
@@ -87,14 +103,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ShapeTest" />
-      <option name="METHOD_NAME" value="testCalcoloPerimetro" />
+      <option name="MAIN_CLASS_NAME" value="org.example.RectangleTest" />
+      <option name="METHOD_NAME" value="testIntersezioneEqual" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeTest.testGetPerimetro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RectangleTest.testIntersezioneOtherMinor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Shapes" />
       <extension name="coverage">
         <pattern>
@@ -103,8 +119,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ShapeTest" />
-      <option name="METHOD_NAME" value="testGetPerimetro" />
+      <option name="MAIN_CLASS_NAME" value="org.example.RectangleTest" />
+      <option name="METHOD_NAME" value="testIntersezioneOtherMinor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RectangleTest.testIntersezioneThisMinor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Shapes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.RectangleTest" />
+      <option name="METHOD_NAME" value="testIntersezioneThisMinor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,9 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShapeTest.testCalcoloArea" />
-        <item itemvalue="JUnit.ShapeTest.testGetPerimetro" />
-        <item itemvalue="JUnit.ShapeTest.testCalcoloPerimetro" />
+        <item itemvalue="JUnit.RectangleTest.testIntersezioneThisMinor" />
+        <item itemvalue="JUnit.RectangleTest.testIntersezioneOtherMinor" />
+        <item itemvalue="JUnit.RectangleTest.testIntersezioneEqual" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.RectangleTest.testIntersezione" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +161,19 @@
       <option name="presentableId" value="Default" />
       <updated>1685616591554</updated>
       <workItem from="1685616592593" duration="412000" />
-      <workItem from="1685886912415" duration="7734000" />
+      <workItem from="1685886912415" duration="8008000" />
+      <workItem from="1685948751251" duration="74000" />
+      <workItem from="1685951422048" duration="89000" />
+      <workItem from="1685954449747" duration="35000" />
+      <workItem from="1685960617791" duration="2361000" />
+      <workItem from="1685966503724" duration="3018000" />
+      <workItem from="1685971256789" duration="476000" />
+      <workItem from="1685972063909" duration="1334000" />
+      <workItem from="1685979200513" duration="1126000" />
+      <workItem from="1686040385733" duration="14000" />
+      <workItem from="1686052211247" duration="1446000" />
+      <workItem from="1686059094997" duration="2560000" />
+      <workItem from="1686234360886" duration="1826000" />
     </task>
     <task id="LOCAL-00001" summary="Inizio progetto e creazione classi">
       <created>1685616874734</created>
@@ -150,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685617001815</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Esercizio terminato, mancano ancora dei test in particolare gestire il rettangolo quando la base o l'altezza è 0 anche l'altro deve essere messo a 0">
+      <created>1685898925438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685898925438</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +223,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inizio progetto e creazione classi" />
     <MESSAGE value="Inizio progetto e creazione classi 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inizio progetto e creazione classi 2" />
+    <MESSAGE value="Esercizio terminato, mancano ancora dei test in particolare gestire il rettangolo quando la base o l'altezza è 0 anche l'altro deve essere messo a 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Esercizio terminato, mancano ancora dei test in particolare gestire il rettangolo quando la base o l'altezza è 0 anche l'altro deve essere messo a 0" />
   </component>
 </project>

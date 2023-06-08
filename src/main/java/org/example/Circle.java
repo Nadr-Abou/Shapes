@@ -5,14 +5,25 @@ public class Circle extends Shape{
     private double raggio;
     private double area;
     private double perimetro;
+    private Cpoint Cpoint = new Cpoint();
+
 
     public Circle() {
     }
 
-    public Circle(double raggio) {
+    public Circle(double raggio,Cpoint point) {
         setRaggio(raggio);
+        setCpoint(point);
         perimetro = calcoloPerimetro();
         area = calcoloArea();
+    }
+
+    public Cpoint getCpoint() {
+        return Cpoint;
+    }
+
+    public void setCpoint(Cpoint cpoint) {
+        this.Cpoint = cpoint;
     }
 
     public double getRaggio() {

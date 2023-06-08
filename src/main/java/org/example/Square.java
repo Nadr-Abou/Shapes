@@ -4,14 +4,24 @@ public class Square extends Shape{
     private double lato;
     private double area;
     private double perimetro;
+    private Cpoint Cpoint = new Cpoint();
 
     public Square() {
     }
 
-    public Square(double lato) {
+    public Square(double lato, Cpoint point) {
         setLato(lato);
+        setCpoint(point);
         area = calcoloArea();
         perimetro = calcoloPerimetro();
+    }
+
+    public Cpoint getCpoint() {
+        return Cpoint;
+    }
+
+    public void setCpoint(Cpoint cpoint) {
+        this.Cpoint = cpoint;
     }
 
     public double getLato() {

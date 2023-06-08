@@ -6,16 +6,25 @@ public class Hexagon extends Shape{
     private double lato;
     private double area;
     private double perimetro;
+    private Cpoint Cpoint = new Cpoint();
 
     public Hexagon() {
     }
 
-    public Hexagon(double lato) {
+    public Hexagon(double lato, Cpoint point) {
         setLato(lato);
+        setCpoint(point);
         perimetro = calcoloPerimetro();
         area = calcoloArea();
     }
 
+    public Cpoint getCpoint() {
+        return Cpoint;
+    }
+
+    public void setCpoint(Cpoint cpoint) {
+        this.Cpoint = cpoint;
+    }
 
     public double getLato() {
         return lato;
